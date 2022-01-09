@@ -40,5 +40,24 @@ bigram_transformer = Phrases(corpus)
 
 # Apply the trained MWE detector to a corpus, using the result to train a Word2vec model.
 model = Word2Vec(bigram_transformer[common_texts], min_count=1)
+
+
+
+
+
+
+
+
+
+from gensim.models import Word2Vec
+sentences = [["cat", "say", "meow"], ["dog", "say", "woof"]]
+
+model = Word2Vec(min_count=1)
+model.build_vocab(sentences)  # prepare the model vocabulary
+model.train(sentences, total_examples=model.corpus_count, epochs=model.epochs)  # train word vectors
+
+
+vector = model.wv['meow']
+print(vector)
 if __name__ == '__main__':
     pass
