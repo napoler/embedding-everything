@@ -22,3 +22,6 @@ Transform a count matrix to a normalized tf or tf-idf representation.
 feature_extraction.text.TfidfVectorizer(*[, ...])
 
 Convert a collection of raw documents to a matrix of TF-IDF features.
+
+## gensim word2vec
+https://radimrehurek.com/gensim/models/word2vec.html

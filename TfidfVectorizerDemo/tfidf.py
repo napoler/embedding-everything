@@ -3,6 +3,8 @@
 作者：　terrychan
 Blog: https://terrychan.org
 # 说明：
+
+将原始文档集合转换为 TF-IDF 特征矩阵。
 https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html
 
 
