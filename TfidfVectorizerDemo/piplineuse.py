@@ -6,6 +6,8 @@ Blog: https://terrychan.org
 https://www.kaggle.com/abdelrahmanzied/ham-or-spam-sms-text-classification
 """
 import os
+import re
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
 # use pipline
